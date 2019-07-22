@@ -21,9 +21,7 @@ const YearProvider = (props) => {
   const [ yearState, yearDispatch ] = useReducer(yearReducer, initialYear);
 
   return (
-    <yearContext.Provider value={{ yearState, yearDispatch }}>
-      { props.children }
-    </yearContext.Provider>
+    <yearContext.Provider value={{ yearState, yearDispatch }} {...props} />
   );
 };
 

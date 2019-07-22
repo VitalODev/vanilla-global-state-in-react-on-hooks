@@ -21,9 +21,7 @@ const MonthProvider = (props) => {
   const [ monthState, monthDispatch ] = useReducer(monthReducer, initialMonth);
 
   return (
-    <monthContext.Provider value={{ monthState, monthDispatch }}>
-      { props.children }
-    </monthContext.Provider>
+    <monthContext.Provider value={{ monthState, monthDispatch }} {...props} />
   );
 };
 

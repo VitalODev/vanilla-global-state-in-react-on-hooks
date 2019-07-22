@@ -21,9 +21,7 @@ const DayProvider = (props) => {
   const [ dayState, dayDispatch ] = useReducer(dayReducer, initialDay);
 
   return (
-    <dayContext.Provider value={{ dayState, dayDispatch }}>
-      { props.children }
-    </dayContext.Provider>
+    <dayContext.Provider value={{ dayState, dayDispatch }} {...props} />
   );
 };
 

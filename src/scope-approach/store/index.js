@@ -20,7 +20,7 @@ const StateProvider = (props) => {
     yearState, yearDispatch
   };
 
-  return <Provider value={providersScope}>{ props.children }</Provider>;
+  return <Provider value={providersScope} {...props} />;
 };
 
 export { globalStateContext };
