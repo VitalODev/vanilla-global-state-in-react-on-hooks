@@ -1,6 +1,6 @@
 const initialDay = { day: '' };
 
-const dayReducer = (state = initialDay, action) => {
+const dayReducer = (state, action) => {
 
   switch(action.type) {
 

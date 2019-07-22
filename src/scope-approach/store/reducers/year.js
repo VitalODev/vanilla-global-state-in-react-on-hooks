@@ -1,6 +1,6 @@
 const initialYear = { year: '' };
 
-const yearReducer = (state = initialYear, action) => {
+const yearReducer = (state, action) => {
 
   switch (action.type) {
 

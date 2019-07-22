@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from 'react';
 
 const initialMonth = { month: '' };
 
-const monthReducer = (state = initialMonth, action) => {
+const monthReducer = (state, action) => {
 
   switch (action.type) {
 
